@@ -105,6 +105,7 @@ Within the TUI, you can:
 - **src/apps.rs**: tracks active window usage via X11  
 - **src/export.rs**: PDF export using `genpdf`  
 - **src/ui.rs**: terminal UI with multiple modes and charts  
+- **src/persistence.rs**: handles log and usage data storage and retrieval via SQLite.
 
 
 ### Exemple of usage: 

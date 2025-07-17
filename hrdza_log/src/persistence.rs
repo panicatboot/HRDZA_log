@@ -5,9 +5,7 @@ use crate::sources::LogEvent;
 use chrono::{DateTime, Local};
 use anyhow::Result;
 
-/// Initialise la base `db_path` et crée les tables :
-/// - `logs` + FTS5 `logs_fts`
-/// - `app_usage`
+// Initialize database and create necessary tables
 pub fn init_db(db_path: &str) -> Result<()> {
     let conn = Connection::open(db_path)?;
     conn.execute_batch(
@@ -27,13 +25,12 @@ pub fn init_db(db_path: &str) -> Result<()> {
             app_name     TEXT,
             window_title TEXT
         );
-        "#,  // <-- fermeture de la raw string ici
+        "#,
     )?;
     Ok(())
 }
 
-/// Insère un LogEvent dans `logs` et dans l’index FTS5.
-/// Ouvre une connexion éphémère à chaque appel (thread-safe).
+// Insert a LogEvent into logs and FTS index
 pub fn insert_log(db_path: &str, ev: &LogEvent) -> Result<()> {
     let conn = Connection::open(db_path)?;
     let ts = DateTime::<Local>::from(ev.timestamp).to_rfc3339();
@@ -48,7 +45,7 @@ pub fn insert_log(db_path: &str, ev: &LogEvent) -> Result<()> {
     Ok(())
 }
 
-/// Agrège la durée totale par application (en heures) depuis la table `app_usage`.
+// Compute total hours per application from app_usage
 pub fn summarize_app_usage(db_path: &str) -> Result<Vec<(String, f64)>> {
     let conn = Connection::open(db_path)?;
     let mut stmt = conn.prepare("SELECT ts_start, ts_end, app_name FROM app_usage")?;
