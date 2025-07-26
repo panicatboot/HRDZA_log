@@ -91,6 +91,10 @@ Within the TUI, you can:
 - **Exit**  
   - `q` or **Ctrl-C**: Quit the application  
 
+### Menu
+<img width="935" height="110" alt="image" src="https://github.com/user-attachments/assets/4eec3ef1-bfe9-4063-b709-d4e59352a681" />
+
+
 ## File Overview
 
 - **Cargo.toml**: project metadata & dependencies  
