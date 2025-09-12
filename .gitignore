@@ -2,3 +2,4 @@ target/
 debug/
 .rustup/
 .devbox/
+hrdza_log.db
