@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": [
+    "rustup@latest",
+    "pkg-config",
+    "gcc",
+    "systemd",
+    "libcap"
+  ],
+  "env": {
+    "RUSTUP_HOME": "$PWD/.rustup"
+  },
+  "shell": {
+    "init_hook": [
+      "rustup default stable",
+      "cd hrdza_log && cargo fetch"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
