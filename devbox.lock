@@ -1,0 +1,74 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "gcc": {
+      "resolved": "github:NixOS/nixpkgs/58dcbf1ec551914c3756c267b8b9c8c86baa1b2f?narHash=sha256-6FWagzm0b7I%2FIGigOv9pr6LL7NQ86mextfE8g8Q6HBg%3D#gcc",
+      "source": "nixpkg"
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2025-09-01T03:15:32Z",
+      "resolved": "github:NixOS/nixpkgs/58dcbf1ec551914c3756c267b8b9c8c86baa1b2f?lastModified=1756696532&narHash=sha256-6FWagzm0b7I%2FIGigOv9pr6LL7NQ86mextfE8g8Q6HBg%3D"
+    },
+    "libcap": {
+      "resolved": "github:NixOS/nixpkgs/58dcbf1ec551914c3756c267b8b9c8c86baa1b2f?narHash=sha256-6FWagzm0b7I%2FIGigOv9pr6LL7NQ86mextfE8g8Q6HBg%3D#libcap",
+      "source": "nixpkg"
+    },
+    "pkg-config": {
+      "resolved": "github:NixOS/nixpkgs/58dcbf1ec551914c3756c267b8b9c8c86baa1b2f?narHash=sha256-6FWagzm0b7I%2FIGigOv9pr6LL7NQ86mextfE8g8Q6HBg%3D#pkg-config",
+      "source": "nixpkg"
+    },
+    "rustup@latest": {
+      "last_modified": "2025-07-28T17:09:23Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#rustup",
+      "source": "devbox-search",
+      "version": "1.28.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fhz4c3pawxqklssimadm9gp5jfagfl8v-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fhz4c3pawxqklssimadm9gp5jfagfl8v-rustup-1.28.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0z156naqlk96m681ns9jji0pw4vwqxq9-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0z156naqlk96m681ns9jji0pw4vwqxq9-rustup-1.28.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2zgwgadb3q97mcia0w2z643y17ifpjkz-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2zgwgadb3q97mcia0w2z643y17ifpjkz-rustup-1.28.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4z7n3dky3wmx7130rid6c67ra1ipqhn1-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4z7n3dky3wmx7130rid6c67ra1ipqhn1-rustup-1.28.2"
+        }
+      }
+    },
+    "systemd": {
+      "resolved": "github:NixOS/nixpkgs/58dcbf1ec551914c3756c267b8b9c8c86baa1b2f?narHash=sha256-6FWagzm0b7I%2FIGigOv9pr6LL7NQ86mextfE8g8Q6HBg%3D#systemd",
+      "source": "nixpkg"
+    }
+  }
+}
